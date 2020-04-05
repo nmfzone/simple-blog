@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    protected $primaryKey = 'id_artikel';
+
     protected $table = 'artikel';
 
     const CREATED_AT = 'tanggal_dibuat';
