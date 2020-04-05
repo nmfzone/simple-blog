@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/articles/{id}', 'ArticlesController@show');
 
 Auth::routes();
 
